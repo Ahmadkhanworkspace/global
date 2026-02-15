@@ -17,17 +17,18 @@ const directors = [
         image: "https://ui-avatars.com/api/?name=Dildar+Ahmed+Khan&background=FF6600&color=fff&size=200"
     },
     {
-        name: "Wing Commander (R) Syed Shahbaz Mushtaq",
+        prefix: "Wing Commander",
+        name: "Syed Shahbaz Mushtaq, R",
         position: "Director Sales & Marketing",
         bio: "Leveraging a high-caliber aviation background and sophisticated technical governance to drive global revenue. His multi-disciplinary expertise bridges the gap between complex engineering and market realization.",
         image: "https://ui-avatars.com/api/?name=Syed+Shahbaz+Mushtaq&background=111&color=fff&size=200"
     },
     {
-        name: "Sultan Khan Waeem",
+        name: "Sultan Khan Naeem",
         position: "Managing Director",
         postNominals: "Director (R) PTV",
         bio: "A seasoned media and management executive ensuring operational efficiency and corporate governance at the highest standards.",
-        image: "https://ui-avatars.com/api/?name=Sultan+Khan+Waeem&background=333&color=fff&size=200"
+        image: "https://ui-avatars.com/api/?name=Sultan+Khan+Naeem&background=333&color=fff&size=200"
     },
     {
         name: "Sheikh Gohar Rehman",
