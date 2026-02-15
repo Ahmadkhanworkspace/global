@@ -1,0 +1,249 @@
+.container {
+    padding: 8rem 2rem 4rem;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f9f9f9 0%, #f0f2f5 100%);
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 5rem;
+    animation: fadeIn 1s ease-out;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    /* Simulating a premium serif */
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+    letter-spacing: -0.02em;
+}
+
+.highlight {
+    color: #FF8C00;
+    /* Primary Corporate Orange */
+    background: linear-gradient(45deg, #FF8C00, #ffaa33);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    color: #555;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto 6rem;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 2px;
+    overflow: visible;
+    /* Allow content to breathe */
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    /* Ultra minimal initial state */
+    transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 2rem;
+    /* Space for image overlap */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    /* Soft, luxurious shadow on hover */
+}
+
+/* Remove gimmicky accents */
+.card::after,
+.card::before {
+    display: none;
+}
+
+.imageWrapper {
+    width: 140px;
+    height: 140px;
+    margin: -3rem auto 1.5rem;
+    /* Negative margin to pull image out of card */
+    border-radius: 50%;
+    padding: 0;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 4px solid #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.6s ease;
+}
+
+.imageWrapper::before {
+    display: none;
+}
+
+.card:hover .imageWrapper {
+    transform: scale(1.05);
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.6s ease;
+    border: none;
+}
+
+.card:hover .image {
+    filter: grayscale(0%);
+}
+
+.cardContent {
+    padding: 1rem 2.5rem 3rem;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+    background: none;
+    -webkit-text-fill-color: initial;
+    letter-spacing: -0.02em;
+}
+
+.position {
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    color: var(--primary-orange);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+/* Minimal underline for position */
+.position::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 1px;
+    background: var(--primary-orange);
+    opacity: 0.6;
+}
+
+.postNominals {
+    font-size: 0.85rem;
+    color: #999;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    font-family: var(--font-serif);
+    margin-top: -1rem;
+}
+
+.bio {
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.8;
+    margin-top: auto;
+    font-weight: 300;
+}
+
+/* Contact CTA Section */
+.contactSection {
+    background: #111;
+    color: #fff;
+    border-radius: 24px;
+    padding: 4rem 2rem;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.contactSection::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 140, 0, 0.1) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.contactTitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.contactText {
+    font-size: 1.1rem;
+    color: #aaa;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactButton {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: #FF8C00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid #FF8C00;
+}
+
+.contactButton:hover {
+    background: transparent;
+    color: #FF8C00;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .grid {
+        gap: 2rem;
+    }
+}

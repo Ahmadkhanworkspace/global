@@ -1,0 +1,69 @@
+.footer {
+    background-color: #111;
+    color: var(--white);
+    padding: 4rem 0 0;
+    margin-top: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    padding-bottom: 3rem;
+}
+
+.column h3,
+.column h4 {
+    margin-bottom: 1.5rem;
+    color: var(--white);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.highlight {
+    color: var(--primary-orange);
+}
+
+.description {
+    color: #bbb;
+    line-height: 1.6;
+}
+
+.list,
+.contactInfo {
+    list-style: none;
+}
+
+.list li,
+.contactInfo li {
+    margin-bottom: 0.8rem;
+}
+
+.list a,
+.contactInfo a {
+    color: #bbb;
+    transition: color 0.3s;
+}
+
+.list a:hover,
+.contactInfo a:hover {
+    color: var(--primary-orange);
+}
+
+.copyright {
+    background-color: #000;
+    text-align: center;
+    padding: 1.5rem;
+    color: #666;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+}
