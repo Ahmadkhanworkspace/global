@@ -1,0 +1,169 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 2rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-family: var(--font-serif);
+    margin-bottom: 1.5rem;
+}
+
+.highlight {
+    color: var(--primary-orange);
+}
+
+/* Tree / Timeline Layout */
+.treeContainer {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.treeContainer::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--primary-orange), #eee);
+    z-index: 0;
+}
+
+.treeItem {
+    width: 50%;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 2rem;
+}
+
+.treeItem:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+.treeItem:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+/* Dots */
+.treeDot {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background: var(--primary-orange);
+    border-radius: 50%;
+    z-index: 2;
+    border: 4px solid white;
+    box-shadow: var(--shadow-sm);
+}
+
+.treeItem:nth-child(odd) .treeDot {
+    right: -10px;
+    transform: translateY(-50%);
+}
+
+.treeItem:nth-child(even) .treeDot {
+    left: -10px;
+    transform: translateY(-50%);
+}
+
+.treeCard {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.treeCard:hover {
+    transform: translateY(-5px);
+}
+
+.category {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--primary-orange);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.treeCard h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.treeCard p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* CSR Section */
+.csrSection {
+    background: #000;
+    color: white;
+    padding: 8rem 2rem;
+    margin-top: 5rem;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.csrTitle {
+    font-size: 3rem;
+    font-family: var(--font-serif);
+    margin-bottom: 3rem;
+}
+
+.csrGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.csrCard {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 3rem;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+.csrCard:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.csrIcon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .treeContainer::before {
+        left: 20px;
+    }
+
+    .treeItem {
+        width: 100%;
+        left: 0 !important;
+        text-align: left !important;
+        padding-left: 50px;
+    }
+
+    .treeDot {
+        left: 10px !important;
+        right: auto !important;
+    }
+}

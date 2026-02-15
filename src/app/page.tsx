@@ -179,7 +179,7 @@ export default function Home() {
             <h3 className={styles.serviceTitle} style={{ fontSize: '1.2rem', color: '#888', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '0.5rem' }}>Case Study</h3>
             <h4 style={{ fontSize: '1.8rem', fontWeight: '800', marginBottom: '1rem' }}>Aviation Fleet Modernization</h4>
             <p className={styles.serviceDesc}>Providing strategic oversight for a mid-sized commercial fleet, optimizing maintenance schedules and reducing operational costs by 18%.</p>
-            <Link href="/" className={styles.learnMore}>Read Success Story →</Link>
+            <Link href="/experiences" className={styles.learnMore}>Read Success Story →</Link>
           </div>
           <div className={styles.serviceCard} style={{ textAlign: 'left' }}>
             <h3 className={styles.serviceTitle} style={{ fontSize: '1.2rem', color: '#888', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '0.5rem' }}>Project Highlight</h3>

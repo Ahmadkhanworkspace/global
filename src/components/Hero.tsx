@@ -168,7 +168,7 @@ const Hero = () => {
                     </p>
                     <div className={styles.actions}>
                         <Link href="/services" className={styles.primaryBtn}>Explore Possibilities</Link>
-                        <Link href="/about" className={styles.secondaryBtn}>Watch The Vision</Link>
+                        <Link href="/experiences" className={styles.secondaryBtn}>Experiences Tree</Link>
                     </div>
                 </div>
 

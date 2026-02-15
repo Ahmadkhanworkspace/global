@@ -30,9 +30,10 @@ const Footer = () => {
                     <h4>Contact Us</h4>
                     <ul className={styles.contactInfo}>
                         <li>Office # F-50A, 1st Floor Gold Point Plaza</li>
-                        <li>Old Naz Cinema, Murree Road</li>
-                        <li>Rawalpindi, Pakistan</li>
-                        <li><a href="mailto:info@globalfuturelinks.com">info@globalfuturelinks.com</a></li>
+                        <li>Old Naz Cinema, Murree Road, Rawalpindi</li>
+                        <li><a href="tel:+923338258372">+92 333 8258372</a></li>
+                        <li><a href="tel:+923212526112">+92 321 2526112</a></li>
+                        <li><a href="mailto:globalfuturelinks86@gmail.com">globalfuturelinks86@gmail.com</a></li>
                     </ul>
                 </div>
             </div>

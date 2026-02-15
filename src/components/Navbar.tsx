@@ -33,9 +33,8 @@ const Navbar = () => {
                     <div className={`${styles.links} ${mobileMenuOpen ? styles.active : ""}`}>
                         <Link href="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
                         <Link href="/about" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
+                        <Link href="/experiences" onClick={() => setMobileMenuOpen(false)}>Experiences</Link>
                         <Link href="/services" onClick={() => setMobileMenuOpen(false)}>Services</Link>
-                        <Link href="/#experiences" onClick={() => setMobileMenuOpen(false)}>Experiences</Link>
-                        <Link href="/#insights" onClick={() => setMobileMenuOpen(false)}>Insights</Link>
                         <Link href="/board-of-directors" onClick={() => setMobileMenuOpen(false)}>Board</Link>
                         <Link href="/contact" className={styles.cta} onClick={() => setMobileMenuOpen(false)}>Contact</Link>
                     </div>

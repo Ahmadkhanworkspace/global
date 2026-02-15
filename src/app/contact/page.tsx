@@ -29,7 +29,7 @@ export default function ContactPage() {
                             <div className={styles.icon}>📞</div>
                             <div className={styles.infoText}>
                                 <h4>Phone</h4>
-                                <p>+92 51 1234567<br />+92 300 1234567</p>
+                                <p>+92 333 8258372<br />+92 321 2526112</p>
                             </div>
                         </div>
 
@@ -37,7 +37,7 @@ export default function ContactPage() {
                             <div className={styles.icon}>✉️</div>
                             <div className={styles.infoText}>
                                 <h4>Email</h4>
-                                <p>info@globalfuturelinks.com<br />sales@globalfuturelinks.com</p>
+                                <p>globalfuturelinks86@gmail.com</p>
                             </div>
                         </div>
 
