@@ -220,19 +220,19 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
             <article>
               <div style={{ height: '200px', background: '#eee', borderRadius: '10px', marginBottom: '1.5rem' }}></div>
-              <span style={{ color: 'var(--primary-orange)', fontWeight: '600', textTransform: 'uppercase', fontSize: '0.9rem' }}>Market Trends</span>
+              <span style={{ color: 'var(--primary-blue)', fontWeight: '600', textTransform: 'uppercase', fontSize: '0.9rem' }}>Market Trends</span>
               <h3 style={{ fontSize: '1.5rem', fontWeight: '700', margin: '0.5rem 0', lineHeight: '1.3' }}>The Future of Sustainable Scrap Trading in 2026</h3>
               <p style={{ color: '#666', lineHeight: '1.6' }}>Analyzing the shift towards green recycling and its impact on global supply chains...</p>
             </article>
             <article>
               <div style={{ height: '200px', background: '#eee', borderRadius: '10px', marginBottom: '1.5rem' }}></div>
-              <span style={{ color: 'var(--primary-orange)', fontWeight: '600', textTransform: 'uppercase', fontSize: '0.9rem' }}>Technology</span>
+              <span style={{ color: 'var(--primary-blue)', fontWeight: '600', textTransform: 'uppercase', fontSize: '0.9rem' }}>Technology</span>
               <h3 style={{ fontSize: '1.5rem', fontWeight: '700', margin: '0.5rem 0', lineHeight: '1.3' }}>AI in Aviation: Predictive Maintenance Revolution</h3>
               <p style={{ color: '#666', lineHeight: '1.6' }}>How artificial intelligence is reshaping safety and efficiency in the aerospace sector...</p>
             </article>
             <article>
               <div style={{ height: '200px', background: '#eee', borderRadius: '10px', marginBottom: '1.5rem' }}></div>
-              <span style={{ color: 'var(--primary-orange)', fontWeight: '600', textTransform: 'uppercase', fontSize: '0.9rem' }}>Compliance</span>
+              <span style={{ color: 'var(--primary-blue)', fontWeight: '600', textTransform: 'uppercase', fontSize: '0.9rem' }}>Compliance</span>
               <h3 style={{ fontSize: '1.5rem', fontWeight: '700', margin: '0.5rem 0', lineHeight: '1.3' }}>Navigating International Trade Regulations</h3>
               <p style={{ color: '#666', lineHeight: '1.6' }}>Essential guide to compliance for government and public sector suppliers...</p>
             </article>

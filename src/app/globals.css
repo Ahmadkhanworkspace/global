@@ -63,10 +63,10 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-orange);
-  border-radius: 5px;
+  background: var(--primary-blue);
+  border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary-orange);
+  background: var(--secondary-blue);
 }

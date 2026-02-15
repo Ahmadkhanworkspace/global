@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className={styles.column}>
                     <div className={styles.logoWrapper}>
                         <Image
-                            src="/logo.svg"
+                            src="/logo.png"
                             alt="Global Futurelinks"
                             width={220}
                             height={60}

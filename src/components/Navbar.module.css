@@ -53,7 +53,8 @@
 }
 
 .highlight {
-    color: var(--primary-orange);
+    color: var(--primary-blue);
+    font-weight: 600;
 }
 
 .links {

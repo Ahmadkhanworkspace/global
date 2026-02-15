@@ -408,9 +408,9 @@
 
 .ctaBtn:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(255, 102, 0, 0.4);
+    box-shadow: 0 15px 30px rgba(10, 13, 102, 0.4);
     background: white;
-    color: var(--primary-orange);
+    color: var(--primary-blue);
 }
 
 /* Global Reach Section */

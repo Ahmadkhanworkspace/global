@@ -67,7 +67,7 @@
 
 .list a:hover,
 .contactInfo a:hover {
-    color: var(--primary-orange);
+    color: var(--primary-blue);
 }
 
 .copyright {

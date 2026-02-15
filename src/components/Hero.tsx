@@ -162,7 +162,7 @@ const Hero = () => {
                         <span className={styles.highlight}>FUTURE LINKS</span>
                     </h1>
                     <p className={styles.subtitle}>
-                        CONNECTING TOMORROW, <span style={{ color: 'var(--primary-orange)', fontWeight: '600' }}>TODAY</span>.
+                        CONNECTING TOMORROW, <span style={{ color: 'var(--primary-blue)', fontWeight: '600' }}>TODAY</span>.
                         <br />
                         Redefining <span key={textIndex} style={{ fontWeight: '700', color: 'var(--text-dark)' }}>{services[textIndex]}</span>
                     </p>

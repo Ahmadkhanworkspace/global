@@ -29,7 +29,7 @@ const Navbar = () => {
                 <div className={styles.container}>
                     <Link href="/" className={styles.logoContainer}>
                         <Image
-                            src="/logo.svg"
+                            src="/logo.png"
                             alt="Global Futurelinks Logo"
                             width={180}
                             height={50}
