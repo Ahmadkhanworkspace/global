@@ -56,7 +56,7 @@
 }
 
 .highlight {
-    color: var(--primary-orange);
+    color: var(--primary-blue);
 }
 
 .servicesGrid {
@@ -94,7 +94,7 @@
     left: 0;
     width: 0%;
     height: 4px;
-    background: var(--primary-orange);
+    background: var(--primary-blue);
     transition: width 0.4s ease;
 }
 
@@ -112,7 +112,7 @@
 .serviceIcon {
     font-size: 3rem;
     margin-bottom: 2rem;
-    color: var(--primary-orange);
+    color: var(--primary-blue);
     background: transparent;
     width: auto;
     height: auto;
@@ -126,7 +126,7 @@
 .serviceCard:hover .serviceIcon {
     transform: scale(1.1);
     background: transparent;
-    color: var(--secondary-orange);
+    color: var(--secondary-blue);
     box-shadow: none;
 }
 
@@ -141,7 +141,7 @@
 }
 
 .serviceCard:hover .serviceTitle {
-    color: var(--primary-orange);
+    color: var(--primary-blue);
 }
 
 .serviceDesc {
@@ -167,7 +167,7 @@
 
 .serviceCard:hover .learnMore {
     gap: 0.8rem;
-    color: var(--primary-orange);
+    color: var(--primary-blue);
 }
 
 /* Testimonials - Minimal Luxury */
@@ -207,7 +207,7 @@
     transform: none;
     box-shadow: none;
     background: transparent;
-    border-color: var(--primary-orange);
+    border-color: var(--primary-blue);
 }
 
 .quote {
@@ -330,14 +330,14 @@
 
 .processStep:hover {
     transform: translateY(-5px);
-    border-left-color: var(--primary-orange);
+    border-left-color: var(--primary-blue);
 }
 
 .stepNumber {
     font-family: var(--font-serif);
     font-size: 3.5rem;
     font-weight: 700;
-    color: var(--primary-orange);
+    color: var(--primary-blue);
     opacity: 0.2;
     position: absolute;
     top: -1.5rem;

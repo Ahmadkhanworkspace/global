@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import styles from "./Navbar.module.css";
 
@@ -26,8 +27,15 @@ const Navbar = () => {
             {/* Main Navbar */}
             <nav className={navbarClass}>
                 <div className={styles.container}>
-                    <Link href="/" className={styles.logo}>
-                        Global<span className={styles.highlight}>Futurelinks</span>
+                    <Link href="/" className={styles.logoContainer}>
+                        <Image
+                            src="/logo.svg"
+                            alt="Global Futurelinks Logo"
+                            width={180}
+                            height={50}
+                            className={styles.logo}
+                            priority
+                        />
                     </Link>
 
                     <div className={`${styles.links} ${mobileMenuOpen ? styles.active : ""}`}>

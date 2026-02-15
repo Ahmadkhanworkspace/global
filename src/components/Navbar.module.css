@@ -32,7 +32,16 @@
     align-items: center;
 }
 
+.logoContainer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
 .logo {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--text-dark);
@@ -56,23 +65,42 @@
 .links a {
     font-weight: 500;
     transition: color 0.3s ease;
+    position: relative;
+    /* Added for ::after pseudo-element */
 }
 
 .links a:hover {
-    color: var(--primary-orange);
+    color: var(--primary-blue);
+}
+
+.links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-blue);
+    transition: width 0.3s ease;
+}
+
+.links a:hover::after {
+    width: 100%;
 }
 
 .cta {
-    padding: 0.5rem 1.5rem;
-    background: var(--primary-orange);
+    background: var(--primary-blue) !important;
     color: white !important;
-    border-radius: 50px;
-    transition: transform 0.2s;
+    padding: 0.8rem 2rem !important;
+    border-radius: 50px !important;
+    transition: all 0.3s ease !important;
+    font-weight: 600 !important;
 }
 
 .cta:hover {
+    background: var(--secondary-blue) !important;
     transform: translateY(-2px);
-    background: var(--secondary-orange);
+    box-shadow: 0 10px 20px rgba(10, 13, 102, 0.2);
 }
 
 .hamburger {

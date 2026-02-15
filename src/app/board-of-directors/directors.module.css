@@ -23,9 +23,8 @@
 }
 
 .highlight {
-    color: #FF8C00;
-    /* Primary Corporate Orange */
-    background: linear-gradient(45deg, #FF8C00, #ffaa33);
+    color: var(--primary-blue);
+    background: linear-gradient(45deg, var(--primary-blue), var(--secondary-blue));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -157,7 +156,7 @@
     transform: translateX(-50%);
     width: 20px;
     height: 1px;
-    background: var(--primary-orange);
+    background: var(--primary-blue);
     opacity: 0.6;
 }
 
@@ -231,18 +230,19 @@
 .contactButton {
     display: inline-block;
     padding: 1rem 2.5rem;
-    background: #FF8C00;
+    background: var(--primary-blue);
     color: #fff;
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
     transition: all 0.3s ease;
-    border: 2px solid #FF8C00;
+    border: 2px solid var(--primary-blue);
 }
 
 .contactButton:hover {
     background: transparent;
-    color: #FF8C00;
+    color: var(--secondary-blue);
+    border-color: var(--secondary-blue);
     transform: translateY(-2px);
 }
 

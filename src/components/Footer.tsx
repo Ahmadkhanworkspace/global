@@ -1,13 +1,22 @@
 import React from 'react';
 import styles from './Footer.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
     return (
         <footer className={styles.footer} id="contact">
             <div className={styles.container}>
                 <div className={styles.column}>
-                    <h3 className={styles.logo}>Global<span className={styles.highlight}>Futurelinks</span></h3>
+                    <div className={styles.logoWrapper}>
+                        <Image
+                            src="/logo.svg"
+                            alt="Global Futurelinks"
+                            width={220}
+                            height={60}
+                            className={styles.footerLogo}
+                        />
+                    </div>
                     <p className={styles.description}>
                         GLOBAL FUTURE LINKS ENTERPRISES (SMC-Private) Limited
                     </p>
