@@ -137,12 +137,12 @@
 
 .position {
     font-family: var(--font-primary);
-    font-size: 0.8rem;
-    color: var(--primary-orange);
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: 1.1rem;
+    color: #444;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: none;
+    letter-spacing: normal;
     padding-bottom: 1rem;
     position: relative;
     display: inline-block;
@@ -162,12 +162,20 @@
 }
 
 .postNominals {
-    font-size: 0.85rem;
-    color: #999;
-    margin-bottom: 1.5rem;
-    font-style: italic;
+    display: block;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
     font-family: var(--font-serif);
-    margin-top: -1rem;
+}
+
+.prefix {
+    display: block;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 0.1rem;
+    font-weight: 400;
 }
 
 .bio {

@@ -9,9 +9,10 @@ const directors = [
         image: "https://ui-avatars.com/api/?name=Malik+Ahsan+Ullah+Awan&background=111&color=fff&size=200"
     },
     {
-        name: "Brigadier (R) Dildar Ahmed Khan Bangash",
-        position: "Senior Director Marketing",
-        postNominals: "Sitara-e-Imtiaz (M), CMILT (UK)",
+        prefix: "Brigadier",
+        name: "Dildar Ahmed Khan Bangash, R",
+        position: "Senior Director",
+        postNominals: "Sitara-e-Imtiaz-(M), CMILT (UK)",
         bio: "A distinguished veteran bringing disciplined strategic leadership and high-level marketing expertise. His illustrious career is marked by precision in global operations and stakeholder management.",
         image: "https://ui-avatars.com/api/?name=Dildar+Ahmed+Khan&background=FF6600&color=fff&size=200"
     },
@@ -72,9 +73,10 @@ export default function BoardOfDirectors() {
                             <img src={director.image} alt={director.name} className={styles.image} />
                         </div>
                         <div className={styles.cardContent}>
+                            {director.prefix && <span className={styles.prefix}>{director.prefix}</span>}
                             <h3 className={styles.name}>{director.name}</h3>
+                            <p className={styles.postNominals}>{director.postNominals}</p>
                             <h4 className={styles.position}>{director.position}</h4>
-                            {director.postNominals && <p className={styles.postNominals}>{director.postNominals}</p>}
                             <p className={styles.bio}>{director.bio}</p>
                         </div>
                     </div>
