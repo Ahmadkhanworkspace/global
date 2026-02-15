@@ -71,7 +71,7 @@ const Hero = () => {
             rotation += rotationSpeed;
 
             // 1. Draw Grid Lines
-            ctx.strokeStyle = 'rgba(255, 102, 0, 0.22)';
+            ctx.strokeStyle = 'rgba(10, 13, 102, 0.22)';
             ctx.lineWidth = 1;
 
             // Latitudes
@@ -141,7 +141,7 @@ const Hero = () => {
 
                 ctx.beginPath();
                 ctx.arc(sx, sy, sz, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(255, 102, 0, ${opacity})`;
+                ctx.fillStyle = `rgba(10, 13, 102, ${opacity})`;
                 ctx.fill();
             });
 
