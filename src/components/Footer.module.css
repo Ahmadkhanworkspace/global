@@ -1,8 +1,9 @@
 .footer {
-    background-color: #111;
-    color: var(--white);
-    padding: 4rem 0 0;
+    background-color: var(--white);
+    color: var(--text-dark);
+    padding: 6rem 0 0;
     margin-top: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .container {
@@ -17,10 +18,11 @@
 
 .column h3,
 .column h4 {
-    margin-bottom: 1.5rem;
-    color: var(--white);
-    font-weight: 600;
-    letter-spacing: 0.5px;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    font-family: var(--font-serif);
 }
 
 .logoWrapper {
@@ -28,10 +30,10 @@
 }
 
 .footerLogo {
-    height: 55px;
+    height: 60px;
     width: auto;
-    filter: brightness(0) invert(1);
-    /* Keep it white for black footer */
+    filter: none;
+    /* Removed inversion for white background */
 }
 
 .logo {
@@ -45,8 +47,9 @@
 }
 
 .description {
-    color: #bbb;
-    line-height: 1.6;
+    color: var(--text-gray);
+    line-height: 1.8;
+    font-size: 1.05rem;
 }
 
 .list,
@@ -60,21 +63,24 @@
 }
 
 .list a,
+.contactInfo li,
 .contactInfo a {
-    color: #bbb;
-    transition: color 0.3s;
+    color: var(--text-gray);
+    transition: all 0.3s ease;
+    font-weight: 400;
 }
 
 .list a:hover,
 .contactInfo a:hover {
     color: var(--primary-blue);
+    padding-left: 5px;
 }
 
 .copyright {
-    background-color: #000;
+    background-color: var(--off-white);
     text-align: center;
-    padding: 1.5rem;
-    color: #666;
-    font-size: 0.9rem;
-    border-top: 1px solid #222;
+    padding: 2rem;
+    color: #888;
+    font-size: 0.95rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
 }

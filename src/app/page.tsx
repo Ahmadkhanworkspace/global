@@ -193,20 +193,20 @@ export default function Home() {
       {/* Global Reach Section */}
       <section className={styles.globalSection}>
         <div style={{ position: 'relative', zIndex: 1 }}>
-          <h2 className={styles.sectionTitle} style={{ color: 'white' }}>Global <span className={styles.highlight}>Reach</span></h2>
-          <p style={{ maxWidth: '600px', margin: '0 auto', color: '#aaa' }}>Connecting markets across continents with seamless efficiency.</p>
+          <h2 className={styles.sectionTitle}>Global <span className={styles.highlight}>Reach</span></h2>
+          <p style={{ maxWidth: '600px', margin: '0 auto', color: 'var(--text-gray)' }}>Connecting markets across continents with seamless efficiency.</p>
 
           <div className={styles.mapContainer}>
             {/* Visual placeholder for Map - In a real app, this would be an SVG map */}
             <div className={styles.mapText}>
-              <div style={{ fontSize: '3rem', fontWeight: '700', color: 'white', marginBottom: '1rem' }}>20+ Countries</div>
-              <div style={{ fontSize: '1.2rem', color: '#888' }}>North America • Europe • Asia • Middle East</div>
-              <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <span style={{ padding: '0.5rem 1rem', background: 'rgba(255,255,255,0.1)', borderRadius: '20px', fontSize: '0.9rem' }}>🇺🇸 USA</span>
-                <span style={{ padding: '0.5rem 1rem', background: 'rgba(255,255,255,0.1)', borderRadius: '20px', fontSize: '0.9rem' }}>🇨🇳 China</span>
-                <span style={{ padding: '0.5rem 1rem', background: 'rgba(255,255,255,0.1)', borderRadius: '20px', fontSize: '0.9rem' }}>🇦🇪 UAE</span>
-                <span style={{ padding: '0.5rem 1rem', background: 'rgba(255,255,255,0.1)', borderRadius: '20px', fontSize: '0.9rem' }}>🇬🇧 UK</span>
-                <span style={{ padding: '0.5rem 1rem', background: 'rgba(255,255,255,0.1)', borderRadius: '20px', fontSize: '0.9rem' }}>🇩🇪 Germany</span>
+              <div style={{ fontSize: '3rem', fontWeight: '800', color: 'var(--primary-blue)', marginBottom: '1rem', letterSpacing: '-0.02em' }}>20+ Countries</div>
+              <div style={{ fontSize: '1.2rem', color: 'var(--text-gray)', fontWeight: '400' }}>North America • Europe • Asia • Middle East</div>
+              <div style={{ marginTop: '2.5rem', display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+                <span style={{ padding: '0.6rem 1.2rem', background: 'white', border: '1px solid rgba(0,0,0,0.05)', borderRadius: '20px', fontSize: '0.9rem', color: 'var(--text-gray)', boxShadow: '0 2px 4px rgba(0,0,0,0.02)' }}>🇺🇸 USA</span>
+                <span style={{ padding: '0.6rem 1.2rem', background: 'white', border: '1px solid rgba(0,0,0,0.05)', borderRadius: '20px', fontSize: '0.9rem', color: 'var(--text-gray)', boxShadow: '0 2px 4px rgba(0,0,0,0.02)' }}>🇨🇳 China</span>
+                <span style={{ padding: '0.6rem 1.2rem', background: 'white', border: '1px solid rgba(0,0,0,0.05)', borderRadius: '20px', fontSize: '0.9rem', color: 'var(--text-gray)', boxShadow: '0 2px 4px rgba(0,0,0,0.02)' }}>🇦🇪 UAE</span>
+                <span style={{ padding: '0.6rem 1.2rem', background: 'white', border: '1px solid rgba(0,0,0,0.05)', borderRadius: '20px', fontSize: '0.9rem', color: 'var(--text-gray)', boxShadow: '0 2px 4px rgba(0,0,0,0.02)' }}>🇬🇧 UK</span>
+                <span style={{ padding: '0.6rem 1.2rem', background: 'white', border: '1px solid rgba(0,0,0,0.05)', borderRadius: '20px', fontSize: '0.9rem', color: 'var(--text-gray)', boxShadow: '0 2px 4px rgba(0,0,0,0.02)' }}>🇩🇪 Germany</span>
               </div>
             </div>
           </div>

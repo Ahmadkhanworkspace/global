@@ -31,11 +31,15 @@ const Navbar = () => {
                         <Image
                             src="/logo.png"
                             alt="Global Futurelinks Logo"
-                            width={180}
-                            height={50}
-                            className={styles.logo}
+                            width={70}
+                            height={70}
+                            className={styles.logoImage}
                             priority
                         />
+                        <div className={styles.logoText}>
+                            <span className={styles.brandName}>Global</span>
+                            <span className={styles.brandSuffix}>Futurelinks</span>
+                        </div>
                     </Link>
 
                     <div className={`${styles.links} ${mobileMenuOpen ? styles.active : ""}`}>

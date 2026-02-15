@@ -35,21 +35,44 @@
 .logoContainer {
     display: flex;
     align-items: center;
+    gap: 1rem;
     height: 100%;
+    text-decoration: none;
 }
 
-.logo {
-    height: 45px;
+.logoImage {
+    height: 60px;
     width: auto;
     object-fit: contain;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text-dark);
-    /* Ensured dark for white background */
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    transition: transform 0.3s ease;
+}
+
+.scrolled .logoImage {
+    height: 50px;
+}
+
+.logoText {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
+}
+
+.brandName {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.brandSuffix {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-gray);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-top: 2px;
 }
 
 .highlight {
